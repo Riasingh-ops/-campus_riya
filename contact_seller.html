@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>chat with seller | CampusConnect</title>
+  
+ <link rel="stylesheet" href="{{url_for('static',filename='contact_seller.css')}}">
+</head>
+<body>
+
+  <header>
+    <!--<div class="logo">CampusConnect</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+      </ul>
+    </nav>-->
+  </header>
+
+  <section class="contact">
+    <h1>Chat with Seller</h1>
+    <form method="POST" action="{{url_for('contact_seller',seller_id=2)}}"> <!--seller_id dynamic-->
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="subject" name="subject" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <section class="chat-box">
+  <h2>Chat History</h2>
+  <div class="messages">
+    {% for msg in messages %}
+      <p><strong>{{ 'You' if msg[0] == sender_id else 'Seller' }}:</strong> {{ msg[1] }}<br>
+      <small>{{ msg[2] }}</small></p>
+    {% endfor %}
+  </div>
+</section>
+  </section>
+
+  <div class="back-link">
+    <a href="{{url_for('home2')}}">← Back to Homepage</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CampusConnect. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

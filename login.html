@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+ <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Icon">
+    <form method="post" action="{{url_for('login')}}">
+      <input type="text" placeholder="Username" name="username" required autocomplete="username">
+      <input type="password" placeholder="Password" name="password" required autocomplete="current-password">
+      <div class="options">
+        <label class="remember">
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <a href="forget.html">Forgot Password?</a>
+      </div>
+      <button type="submit">LOGIN</button>
+    </form>
+  </div>
+  <div class="back-link">
+    <a href="{{url_for('index')}}">← Back</a>
+  </div>
+</body>
+</html>

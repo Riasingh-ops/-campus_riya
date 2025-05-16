@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes | CampusConnect</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+ <link rel="stylesheet" href="{{url_for('static',filename='note.css')}}">
+</head>
+
+<body>
+
+  <header>
+    CampusConnect Marketplace
+  </header>
+
+  <section class="page-header">
+    <h1>Notes</h1>
+    <p>Get all your study materials and stationery at affordable prices!</p>
+  </section>
+
+  <section class="Notes-container">
+    <div class="Notes-card">
+      <img src="https://via.placeholder.com/300x200" alt="Python Notes">
+      <h3>Python Notes</h3>
+      <p>20 pages</p>
+      <p class="price">₹50</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller')}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+
+    <div class="Notes-card">
+      <img src="https://via.placeholder.com/300x200" alt="C++ Notes">
+      <h3>C++ Notes</h3>
+      <p> 20 pages</p>
+      <p class="price">₹120</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller')}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+
+    <div class="Notes-card">
+      <img src="https://via.placeholder.com/300x200" alt="C Notes">
+      <h3>C Notes</h3>
+      <p> 20 pages</p>
+      <p class="price">₹800</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller')}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+  </section>
+
+  <div class="back-link">
+    <a href="{{url_for('hom2')}}">← Back to Homepage</a>
+  </div>
+
+  <footer>
+    &copy; 2025 CampusConnect. All rights reserved.
+  </footer>
+
+</body>
+</html>

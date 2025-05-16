@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Connect</title>
+   <link rel="stylesheet" href="{{url_for('static',filename='home2.css')}}">
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <div class="logo">CampusConnect</div>
+      <nav>
+        <ul>
+          <li><a href="{{url_for('home2')}}">Home</a></li>
+          <li><a href="{{url_for('account')}}">Account</a></li>
+          <li><a href="{{url_for('sell')}}">Sell</a></li>
+         
+          <li><a href="{{url_for('about')}}">About us</a></li>
+  
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to CampusConnect </h1>
+        <p>Your one-stop platform for campus sales, events, and more!</p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </section>
+    
+<div class="slideshow">
+  <div class="slides">
+ <img src="{{ url_for('static', filename='booki.jpg') }}" alt="Books">
+    <img src="{{ url_for('static', filename='hosteli.jpeg') }}" alt="Clothes">
+     <img src="{{ url_for('static', filename='event.jpeg') }}" alt="Event">
+      <img src="{{ url_for('static', filename='electronic.jpeg') }}" alt="Electronics">
+       <img src="{{ url_for('static', filename='stationery.jpg') }}" alt="Stationery">
+  </div>
+</div>
+
+   <section class="categories">
+    <div class="container">
+      <h2 class="section-title">Explore Categories</h2>
+      <div class="categories-grid">
+        <div class="category-card fade-in">
+          <img src="{{ url_for('static', filename='book2.jpg') }}" alt="Image Description">
+          <h3>Books</h3>
+          <a href="{{url_for('book')}}" class="btn-secondary">Explore More</a>
+        </div>
+
+        <div class="category-card fade-in delay-1">
+          <div class="card-image" style="background-image: url('fashion.jfif');"></div>
+          <h3>Clothes & Accessories</h3>
+          <a href="{{url_for('clothes')}}" class="btn-secondary">Explore More</a>
+        </div>
+
+        <div class="category-card fade-in delay-2">
+          <img src="{{ url_for('static', filename='electronic.jpeg') }}" alt="Image Description">
+          <h3>Electronics & Gadgets</h3>
+          <a href="{{url_for('electronic')}}" class="btn-secondary">Explore More</a>
+        </div>
+
+        <div class="category-card fade-in delay-3">
+          <img src="{{ url_for('static', filename='eventi.jpg') }}" alt="Image Description">
+          <h3>Event Items</h3>
+          <a href="{{url_for('event')}}" class="btn-secondary">Explore More</a>
+        </div>
+
+        <div class="category-card fade-in delay-4">
+          <img src="{{ url_for('static', filename='hostel.jpeg') }}" alt="Image Description">
+          <h3>Hostel Stuffs</h3>
+          <a href="{{url_for('hostel')}}"class="btn-secondary">Explore More</a>
+        </div>
+
+        <div class="category-card fade-in delay-5">
+           <img src="{{ url_for('static', filename='stationeryi.jpg') }}" alt="Image Description">
+          <h3>Stationery Items</h3>
+          <a href="{{url_for('stationery')}}" class="btn-secondary">Explore More</a>
+        </div>
+        <div class="category-card fade-in delay-5">
+          <img src="{{ url_for('static', filename='stationery.jpg') }}" alt="Image Description">
+          <h3>Notes</h3>
+          <a href="{{url_for('note')}}" class="btn-secondary">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  
+      
+
+
+  
+<footer>
+  <p>&copy; 2025 CampusConnect. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

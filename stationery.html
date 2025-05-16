@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stationery Items for Sale | CampusConnect</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  
+ <link rel="stylesheet" href="{{url_for('static',filename='stationery.css')}}">
+  
+</head>
+
+<body>
+
+  <header>
+    CampusConnect Marketplace
+  </header>
+
+  <section class="page-header">
+    <h1>Stationery Items for Sale</h1>
+    <p>Get all your study materials and stationery at affordable prices!</p>
+  </section>
+
+  <section class="stationery-container">
+    <div class="stationery-card">
+      <img src="https://via.placeholder.com/300x200" alt="Notebook">
+      <h3>Notebook</h3>
+      <p>100 pages</p>
+      <p class="price">₹50</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller')}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+
+    <div class="stationery-card">
+      <img src="https://via.placeholder.com/300x200" alt="Pen Set">
+      <h3>Pen Set</h3>
+      <p>Pack of 5</p>
+      <p class="price">₹120</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller')}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+
+    <div class="stationery-card">
+      <img src="https://via.placeholder.com/300x200" alt="Calculator">
+      <h3>Scientific Calculator</h3>
+      <p>By Casio</p>
+      <p class="price">₹800</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller')}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+  </section>
+
+  <div class="back-link">
+    <a href="{{url_for('hom2')}}">← Back to Homepage</a>
+  </div>
+
+  <footer>
+    &copy; 2025 CampusConnect. All rights reserved.
+  </footer>
+
+</body>
+</html>

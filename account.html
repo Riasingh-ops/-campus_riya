@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Account - Campus Marketplace</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='account.css')}}">
+</head>
+<body>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>My Account</h2>
+      <a href="{{url_for('chatp',seller_id=2)}}">Message Box</a>
+      <a href="{{url_for('account')}}">Edit Profile</a>
+      
+      <a href="{{url_for('logout')}}">Logout</a>
+    </div>
+
+    <div class="main-content">
+      <div class="profile-header">
+        <img src="black admin.png"User Photo>
+        <div>
+        </div>
+      </div>
+
+      <div class="edit-form">
+        <h3>Edit Profile</h3>
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="text" placeholder="Course" required>
+          <input type="text" placeholder="Year" required>
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+
+      
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="back-link">
+    <a href="{{url_for('home2')}}">← Back to Homepage</a>
+  </div>
+
+</body>
+</html>

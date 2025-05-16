@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Books for Sale | CampusConnect</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+   <link rel="stylesheet" href="{{url_for('static',filename='book.css')}}">
+
+  
+  </head>
+
+<body>
+
+  <header>
+    CampusConnect Marketplace
+  </header>
+
+  <section class="page-header">
+    <h1>Books for Sale</h1>
+    <p>Find second-hand textbooks, novels, and study materials easily!</p>
+  </section>
+
+  <section class="books-container">
+    <div class="book-card">
+      <img src="https://via.placeholder.com/300x200" alt="Python Programming">
+      <h3>Python Programming</h3>
+      <p>By John Zelle</p>
+      <p class="price">₹300</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller',seller_id=2)}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://via.placeholder.com/300x200" alt="Data Structures in C">
+      <h3>Data Structures in C</h3>
+      <p>By Reema Thareja</p>
+      <p class="price">₹250</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller',seller_id=2)}}"class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://via.placeholder.com/300x200" alt="Operating System Concepts">
+      <h3>Operating System Concepts</h3>
+      <p>By Silberschatz</p>
+      <p class="price">₹400</p>
+      <div class="button-row">
+        <a href="{{url_for('sell')}}" class="modern-btn detail-btn">Detail More</a>
+        <a href="{{url_for('contact_seller',seller_id=2)}}" class="modern-btn chat-btn">Chat with Seller</a>
+    </div>
+    </div>
+
+    <!-- More book cards can be added -->
+  </section>
+
+  <div class="back-link">
+    <a href="{{url_for('home2')}}">← Back to Homepage</a>
+  </div>
+
+  <footer>
+    &copy; 2025 CampusConnect. All rights reserved.
+  </footer>
+
+</body>
+</html>

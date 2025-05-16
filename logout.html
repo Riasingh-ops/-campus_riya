@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="{{url_for('static',filename='logout.css')}}">
+</head>
+<body>
+
+  <!-- Flask logout route link -->
+  <a href="{{ url_for('logout') }}" class="logout-btn">
+    <i class="fas fa-sign-out-alt"></i> Logout
+  </a>
+
+</body>
+</html>
